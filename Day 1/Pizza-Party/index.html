@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Pizza Party</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>  You are ordering pizza for a group of 8 people.<br>
+                     Each person will eat 3 slices.<br>
+                     Each pizza has 8 slices.<br>
+                     Calculate how many pizzas you should order.
+                </p>
+<pre>
+<code>   
+console.log("Pizza Party");
+var group = 8;
+var person = 3;
+var pizzaslice = 8;
+
+// first calculate the total slices needed
+var totalSlicesNeeded = group * person;
+
+// now divide the Slide with 8 then we got pizzas needed 
+var pizzaneeded = totalSlicesNeeded / pizzaslice;
+console.log ("we need to order "+pizzaneeded+"Pizzas")
+
+document.getElementById("ex1").innerText = "We Need " + pizzaneeded + "pizzas";
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+             
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

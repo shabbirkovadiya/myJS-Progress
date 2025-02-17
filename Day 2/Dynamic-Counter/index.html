@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic-Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Dynamic-Counter</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Have a button that, when clicked, increments a counter displayed on console log.  <br>You'll need a function to handle the incrementing and updating the display</p>
+<pre>
+<code>   
+console.log("Dynamic Counter");
+let Count = 0;  
+function inc() {
+Count += 1;
+document.getElementById("ex1").innerText = "Current Count: " + Count;
+console.log(Count);
+}
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="inc()">Click Here</button>
+            </div>
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

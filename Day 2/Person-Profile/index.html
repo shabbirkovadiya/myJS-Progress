@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person-Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Person-Profile</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>  Create variable with object 
+                     add two key like first name and last name <br>
+                     Create a function for create full name <br>
+                     for example object first name is Raju  and last name  Sharma then concat this first and last name and <br>
+                      console log the full name like  The full name is Raju Sharma  <br>
+                     Create a button to execute this function.
+                </p>
+<pre>
+<code>   
+console.log("Person Profile")
+let fullname = {
+    fname:"Shabbir",
+    lname:"Kovadiya",
+}
+function printname(){
+console.log(fullname.fname + fullname.lname);
+document.getElementById("ex1").innerText = fullname.fname + fullname.lname;
+}
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="printname()">Click To Print</button>
+            </div>
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

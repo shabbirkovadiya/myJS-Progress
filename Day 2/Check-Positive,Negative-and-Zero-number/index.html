@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-Positive,Negative-and-Zero-number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Check-Positive,Negative-and-Zero-number</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> Create a variable with any number. <br>
+                    Create a function that check this variable  number is negative, positive or zero.<br>
+                    If number is zero then print   console.log("The number is zero."); <br>
+                    if number is positive then print  console.log("The number is positive ."); <br>
+                    if number is negative then print console.log("The number is negative ."); <br>
+                    Create a button and on click event to call the function</p>
+<pre>
+<code>   
+console.log("Check-Positive,Negative-and-Zero-number");
+function check(number){
+    if (number == 0) {
+        return " The number  is zero.";
+    }
+ else if (number > 0){
+    return " The number  is Positive.";    
+ }
+ else if(number < 0) {
+    return " The number  is Negative.";
+ }
+}
+console.log(check(-2));
+document.getElementById("ex1").innerText =check(0);
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

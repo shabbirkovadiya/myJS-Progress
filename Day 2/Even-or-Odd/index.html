@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even-or-Odd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Even-or-Odd</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Create any variable with number <br>
+                    Create function and check this variable number is even or odd<br>
+                    Print result in console is number is Odd     console.log("The number is odd.");  <br>
+                    Print result in console is number is Even console.log("The number is even.");  <br>
+                    Create button and add on click event this created function.
+                    
+                    
+                    </p>
+<pre>
+<code>   
+console.log("Even-Odd");
+function checkEvenOdd(no) {
+if (no % 2 == 0){
+   return no +" Number Is Even";
+}
+else {
+    return no + " Number is odd.";
+}
+}
+console.log(checkEvenOdd(5));
+document.getElementById("ex1").innerText = checkEvenOdd(4);
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

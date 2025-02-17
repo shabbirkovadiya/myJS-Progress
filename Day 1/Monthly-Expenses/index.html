@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Monthly Expenses</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>You have a weekly budget of $100. <br>
+                    You buy groceries for $35, gas for $20, and miscellaneous items for $12. <br>
+                    Calculate how much money you have remaining for the week.</p>
+<pre>
+<code>   
+var budget = 100;
+var groceries = 35;
+var gas = 20;
+var miscellaneous = 12;
+let Remaining = budget - groceries - gas - miscellaneous;
+console.log("Remaining money for the week: $" + Remaining);
+document.getElementById("ex1").innerText =  "$" + Remaining;
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+            
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>
