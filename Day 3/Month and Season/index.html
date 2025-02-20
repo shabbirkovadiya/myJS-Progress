@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month and Season</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Month and Season</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> Create a variable month (store a number between 1 and 12). like month = 2 <br>
+                    Use a switch statement, potentially with nested logic, to determine and output the season:<br>
+                    12, 1, 2: "Winter"<br>
+                    3, 4, 5: "Spring"<br>
+                    6, 7, 8: "Summer"<br>
+                    9, 10, 11: "Autumn"<br>
+                    Include a default case for an invalid month number.<br>
+                    
+                </p>
+<pre>
+<code>   
+let month = 2;
+switch (month) {
+  case 12:
+  case 1:
+  case 2:
+    console.log("Winter");
+    break;
+  case 3:
+  case 4:
+  case 5:
+    console.log("Spring");
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log("Summer");
+    break;
+  case 9:
+  case 10:
+  case 11:
+    console.log("Autumn");
+    break;
+  default:
+    console.log("Invalid month");
+}
+document.getElementById("ex1").innerText = "Check Console For Month 2"
+    
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+           
+            </div>
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

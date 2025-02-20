@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Permissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Multiple Permissions</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Create variables isAdmin, isEditor, and isModerator. and set boolen value. <br>
+                Use || to log "Access granted" if any of the permission variables are true.<br>
+                    Log "Access denied" if none are true.
+                    </p>
+<pre>
+<code>   
+let isAdmin = true;
+let isEditor = false;
+let isModerator = false;
+if(isAdmin || isEditor || isModerator){
+    console.log("Access granted");
+}
+else{
+    console.log("Access denied");
+}
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

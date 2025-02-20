@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Day of the Week</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> 
+                    Create a variable called day and assign it a number between 1 and 7 (representing days of the week).
+                    Use a switch statement to output the corresponding day of the week (e.g., 1 for "Monday").
+                    Include a default case that outputs "Invalid day number".
+                    
+                    
+                </p>
+<pre>
+<code>   
+let day = 3;
+
+switch (day) {
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        case 5:
+            console.log("Friday");
+            break;
+        case 6:
+            console.log("Saturday");
+            break;
+        case 7:
+            console.log("Sunday")
+            break;
+        default:
+            console.log("Invalid day number");
+}
+    
+document.getElementById("ex1").innerText = "See Console For CASE 3";
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

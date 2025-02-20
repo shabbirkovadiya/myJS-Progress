@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy/Falsy Checkr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Truthy/Falsy Check</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> Write a function isTruthy(value) that takes a value as input and print true if it's truthy, and false if it's falsy. <br>
+                    Test your function with various values (numbers, strings, Booleans, null, undefined, arrays, objects).
+                    
+                    </p>
+<pre>
+<code>   
+function isTruthy(value) {
+    if (value) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+
+// Testing with various values
+isTruthy(true);        // true
+isTruthy(false);       // false
+isTruthy(1);           // true
+isTruthy(0);           // false
+isTruthy("Hello");     // true
+isTruthy("");          // false
+isTruthy(null);        // false
+isTruthy(undefined);   // false
+isTruthy([]);          // true
+isTruthy({});          // true
+isTruthy(NaN);         // false
+    
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Item Availability</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Create variables itemInStock and isSubscribed. <br>
+                    Use the && operator to log "You can purchase this item" if both conditions are true. Otherwise, provide a reason <br>why they cannot purchase.
+                    if itemInStock is true and isSubscribed  is true then print message "You can purchase this item" <br>
+                    if itemInStock is false then print "The item is out of stock"<br>
+                    if isSubscribed  is false then print message "You need to be subscribed"<br>
+                    Handle via function all code on clicking button</p>
+<pre>
+<code>   
+let itemInStock = true;
+let isSubscribed = true;
+function purchaseItem(){
+    if(itemInStock && isSubscribed){
+        console.log("You can purchase this item");
+    }
+    else if(!itemInStock){
+        console.log("The item is out of stock");
+    }
+    else{
+        console.log("You need to be subscribed");
+    }
+        
+}
+    
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="purchaseItem()">Click Here</button>
+            </div>
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Choice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Flavor Choice</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>
+                    Create variables likesChocolate and likesVanilla <br>
+let likesChocolate = false; <br>
+let likesVanilla = true; <br>
+Create a function and call oncliking button <br>
+inside this function use the || operator to log "Here's your ice cream" if at least one flavor preference is true.  <br>Otherwise, log "Sorry, we don't have a flavor for you".
+change after all two let (variables)  value to false and check condition
+
+                </p>
+<pre>
+<code>   
+let likesChocolate = false;
+let likesVanilla = true;
+function check() {
+  if (likesChocolate || likesVanilla) {
+     console.log("Here's your ice cream")
+     return "Here's your ice cream";
+  }
+  else {
+     console.log("Sorry, we don't have a flavor for you");
+     return "Sorry, we don't have a flavor for you";
+  }
+}
+document.getElementById("ex1").innerText =check();
+   
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="check()">Click Here</button>
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

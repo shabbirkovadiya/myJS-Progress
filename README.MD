@@ -176,3 +176,95 @@ if age is more then 50 +then user not able to get any discount
 Show message on console if eligible discount like Raju, you are eligible for a 10% discount! 
 if not eligible for discount then show Raju, sorry, no discount available. 
 Click button should create function.
+
+# Learning JS Day-3
+Day 1 Contain 9 Files and That FIles Container Diffrent Problems And There Solution
+
+## Admission Check
+
+Create variables age and hasTicket.
+let age = 15
+let hasTicket = false.
+Change variable value accordingly 
+Create a function and call oncliking button
+inside this function using a if statement with the && operator, log "Welcome!" if the person is over 18 and has a ticket. Otherwise, log "Sorry, you cannot enter."
+
+## Flavor Choice
+
+Create variables likesChocolate and likesVanilla
+let likesChocolate = false;
+let likesVanilla = true;
+Create a function and call oncliking button
+inside this function use the || operator to log "Here's your ice cream" if at least one flavor preference is true. Otherwise, log "Sorry, we don't have a flavor for you".
+change after all two let (variables)  value to false and check condition
+
+## Item Availability
+
+Create variables itemInStock and isSubscribed.
+Use the && operator to log "You can purchase this item" if both conditions are true. Otherwise, provide a reason why they cannot purchase.
+if itemInStock is true and isSubscribed  is true then print message "You can purchase this item" 
+if itemInStock is false then print "The item is out of stock"
+if isSubscribed  is false then print message "You need to be subscribed"
+Handle via function all code on clicking button
+
+
+## Multiple Permissions
+
+Create variables isAdmin, isEditor, and isModerator. and set boolen value.
+Use || to log "Access granted" if any of the permission variables are true.
+ Log "Access denied" if none are true.
+
+
+## Day of the Week
+
+Create a variable called day and assign it a number between 1 and 7 (representing days of the week).
+Use a switch statement to output the corresponding day of the week (e.g., 1 for "Monday").
+Include a default case that outputs "Invalid day number".
+
+
+
+## Grade Evaluator
+
+Create a variable grade with a letter grade 
+assign any one value from this ('A', 'B', 'C', 'D', 'F').
+se a switch statement to output a message: 
+"Excellent" for 'A'
+"Good" for 'B'
+"Satisfactory" for 'C'
+"Needs improvement" for 'D'
+"Failed" for 'F'
+Include a default case for an invalid grade.
+ 
+
+
+## Vowel Checker
+
+Create a variable letter.
+
+Use a switch statement to determine if the letter is a vowel (use lowercase). Output a message indicating if it's a vowel or not.
+
+hint - a, e, i, o, u, is vowel 
+
+
+
+## Month and Season
+
+Create a variable month (store a number between 1 and 12). like month = 2
+Use a switch statement, potentially with nested logic, to determine and output the season:
+12, 1, 2: "Winter"
+3, 4, 5: "Spring"
+6, 7, 8: "Summer"
+9, 10, 11: "Autumn"
+Include a default case for an invalid month number.
+
+
+
+
+## Truthy/Falsy Check:
+
+Write a function isTruthy(value) that takes a value as input and print true if it's truthy, and false if it's falsy.
+Test your function with various values (numbers, strings, Booleans, null, undefined, arrays, objects).
+
+
+
+

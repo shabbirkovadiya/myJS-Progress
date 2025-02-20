@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Admission Check</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> 
+                    Create variables age and hasTicket. <br>
+                    let age = 15<br>
+                    let hasTicket = false.<br>
+                    Change variable value accordingly <br>
+                    Create a function and call oncliking button<br>
+                    inside this function using a if statement with the && operator, <br>log "Welcome!" if the person is over 18 and has a ticket. Otherwise, log "Sorry, you cannot enter."                    
+                    
+
+                </p>
+<pre>
+<code>   
+console.log("Admission Check");
+let age = 18;
+let hasTicket = true;
+function checkAdmission() {
+    if (age >= 18 && hasTicket) {
+        console.log("Welcome");
+        return "Welcome!(print)" ;
+        
+    }
+    else{
+        console.log("Sorry, you cannot enter.");
+    return "Sorry, you cannot enter.(print)" ;
+}
+
+}
+document.getElementById("ex1").innerText = checkAdmission();
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="checkAdmission()">Check Admission on Console</button>
+
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

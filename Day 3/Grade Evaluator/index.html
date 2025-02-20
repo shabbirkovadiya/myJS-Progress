@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Evaluator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Grade Evaluator</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> Create a variable grade with a letter grade <br>
+                    assign any one value from this ('A', 'B', 'C', 'D', 'F').<br>
+                    se a switch statement to output a message: <br>
+                    "Excellent" for 'A'<br>
+                    "Good" for 'B'<br>
+                    "Satisfactory" for 'C'<br>
+                    "Needs improvement" for 'D'<br>
+                    "Failed" for 'F'<br>
+                    Include a default case for an invalid grade.
+                                         
+                     </p>
+<pre>
+<code>   
+let grade = "A";
+switch (grade) 
+  case "A":
+    console.log("Excellent");
+    break;
+  case "B":
+    console.log("Good");
+    break;
+  case "C":
+    console.log("Satisfactory");
+    break;
+  case "D":
+    console.log("Needs improvement");
+    break;
+  case "F":
+    console.log("Failed");
+    default:
+        console.log("Invalid grade");
+
+
+document.getElementById("ex1").innerText = "Check Console For Grade A";
+    
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            
+            </div>
+
+          
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

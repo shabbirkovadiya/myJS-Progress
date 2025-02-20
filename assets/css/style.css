@@ -118,3 +118,6 @@ background-color: rgba(128, 128, 128, 0.212);
   background-color: var(--day2-badge-color);
 
 }
+.day-3 {
+  background-color: var(--day3-badge-color);
+}
