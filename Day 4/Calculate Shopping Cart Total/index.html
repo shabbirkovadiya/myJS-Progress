@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Shopping Cart Total</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Calculate Shopping Cart Total</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> 
+                    Create object array like  <br>
+                    const cartItems = [{ name: "Laptop", price: 999.99 },   { name: "Headphones", price: 149.95 }, { name: "Mouse", price: 29.99 }]; <br>
+                    
+                    using for loop find total final price and print log result
+                   
+                    
+
+                </p>
+<pre>
+<code>   
+const cartItems = [{ name: "Laptop", price: 999.99 },   { name: "Headphones", price: 149.95 }, { name: "Mouse", price: 29.99 }];
+let total = 0;
+for (let i = 0; i < cartItems.length; i++) {
+    total += cartItems[i].price;
+}
+        console.log("Total price: " + total);
+
+
+document.getElementById("ex1").innerText = "See Console For Result";
+
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <!-- <button onclick="">Check Sum In Console</button> -->
+
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

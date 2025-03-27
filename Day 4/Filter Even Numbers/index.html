@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Even Numbers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Filter Even Numbers</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> Create a function and call on clicking button <br>
+                    Create Number data types Array like const numbers = [1, 2, 3, 4, 5, 6, 7, 8]; <br>
+                    Filter all even number and push in new array all even value and for filter even number use for loop<br>
+                    print final result in console log
+                    
+
+                </p>
+<pre>
+<code>   
+function evenNumbers() {
+    const numbers = [1,2,3,4,5,6,7,8];
+    const evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
+            }
+            }
+            console.log(evenNumbers);
+            
+    }
+
+document.getElementById("ex1").innerText = "See Console For Result";
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="evenNumbers()"> Click to Get Result In Console</button>
+
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

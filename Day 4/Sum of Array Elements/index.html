@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Sum of Array Elements</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p> 
+                    Create a function and call on clicking button <br>
+                    Create Number data types Array like const numbers = [5, 12, 8, 130, 44];<br>
+                    Sum all numbers inside array using for loop and print final result in console.<br>
+                    
+
+                </p>
+<pre>
+<code>   
+function sumArr(){
+    const numbers = [5, 12, 8, 130, 44];
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];  
+    }
+    console.log(sum)
+}
+
+document.getElementById("ex1").innerText = "See Console For Result";
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            <button onclick="sumArr()">Check Sum In Console</button>
+
+            </div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>

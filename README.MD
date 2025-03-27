@@ -268,3 +268,146 @@ Test your function with various values (numbers, strings, Booleans, null, undefi
 
 
 
+# Learning JS Day-4
+
+
+Day 4Contain 10 Files and That FIles Container Diffrent Problems And There Solution
+
+## Sum of Array Elements
+
+Create a function and call on clicking button
+Create Number data types Array like const numbers = [5, 12, 8, 130, 44];
+Sum all numbers inside array using for loop and print final result in console.
+
+## Calculate Shopping Cart Total
+
+Create object array like 
+const cartItems = [{ name: "Laptop", price: 999.99 },   { name: "Headphones", price: 149.95 }, { name: "Mouse", price: 29.99 }];
+
+using for loop find total final price and print log result
+
+
+## Filter Even Numbers
+
+Create a function and call on clicking button
+Create Number data types Array like const numbers = [1, 2, 3, 4, 5, 6, 7, 8]; 
+Filter all even number and push in new array all even value and for filter even number use for loop
+print final result in console log
+
+
+## Create a Basic Multiplication
+
+Create variable like const number = 5; 
+
+and create for loop of limit 10 and divide number variable to index and each count of loop print this message 
+```
+console.log( `${number} x ${i} = ${result}` );
+```
+
+
+## Find the Index of an Element
+
+Create array variable like this const fruits = ["apple", "banana", "orange", "grape"]; 
+
+Create another variable like this const targetFruit = "orange"; 
+
+using this array and for loop find index position of targetFruit value. 
+
+if targetFruit index found then break loop
+
+if targetFruit index position is found then print message like console.log("Index of", targetFruit, "is:", targetIndex);
+
+and other wise if index position is not found then print message   console.log(targetFruit, "not found.");
+
+
+## For Loop Js Task
+
+![App Screenshot](https://t9002209591.p.clickup-attachments.com/t9002209591/86d75ee2-3385-4955-a4a5-072724cf6cfb/image.png)
+
+![App Screenshot](https://t9002209591.p.clickup-attachments.com/t9002209591/217faa57-4207-4127-b2cb-76eabaa3c3c7/image.png)
+
+![App Screenshot](
+https://t9002209591.p.clickup-attachments.com/t9002209591/ca658209-6a81-4cad-bac3-53933d68a7fa/image.png)
+
+
+## Basic DOM Manipulation
+
+Change the background color of the entire webpage when a button is clicked.
+Create a list of items. When a user clicks on an item, change its font style (e.g., bold, italic).
+Create a form with a name input field. When the form is submitted, display the entered name in a separate paragraph element.
+
+
+## Element Visibility Toggle:
+
+Create a webpage with three buttons and two text boxes (initially hidden).
+The first button should toggle the visibility of both text boxes (show/hide).
+The second and third buttons should toggle the visibility of each text box individually.
+
+
+## Content Modification:
+
+Create a webpage with a heading (e.g., "Welcome Visitor") and a button.
+
+Clicking the button should change the heading text to something personalized (e.g., "Welcome [Your Name]!").
+
+
+## UI With ForLoop
+
+Need to create UI using forloop
+
+so first make array with large object check 
+```
+const uiData = {
+      page: 2,
+      per_page: 6,
+      total: 12,
+      total_pages: 2,
+      data: [
+        {
+          id: 7,
+          email: "michael.lawson@reqres.in",
+          first_name: "Michael",
+          last_name: "Lawson",
+          avatar: "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+          id: 8,
+          email: "lindsay.ferguson@reqres.in",
+          first_name: "Lindsay",
+          last_name: "Ferguson",
+          avatar: "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+          id: 9,
+          email: "tobias.funke@reqres.in",
+          first_name: "Tobias",
+          last_name: "Funke",
+          avatar: "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+          "id": 10,
+          "email": "byron.fields@reqres.in",
+          "first_name": "Byron",
+          "last_name": "Fields",
+          "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+          id: 11,
+          email: "george.edwards@reqres.in",
+          first_name: "George",
+          last_name: "Edwards",
+          avatar: "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+          id: 12,
+          email: "rachel.howell@reqres.in",
+          first_name: "Rachel",
+          last_name: "Howell",
+          avatar: "https://reqres.in/img/faces/12-image.jpg"
+        }
+      ],
+    }`
+
+```
+Using this object show dynamic data using javascript in HTML views
+
