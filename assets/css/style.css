@@ -68,7 +68,7 @@ body {
     margin-right: 10px;
 }
 .intermediate {
-  background-color: #7ea0ff;
+  background-color: var(--intermediatecolor);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -77,6 +77,7 @@ body {
   justify-content: center;
   margin-right: 10px;
 }
+
 .circle {
     height: 15px;
     width: 15px;
@@ -104,6 +105,7 @@ background-color: rgba(128, 128, 128, 0.212);
 .beginner-sec .task a:hover {
   color: #a89fff;
 }
+.intermediate-sec
 .day-1,.day-2, .day-3, .day-4, .day-5 , .day-6 {
   padding: 1px 10px;
   margin: 0px 10px;
