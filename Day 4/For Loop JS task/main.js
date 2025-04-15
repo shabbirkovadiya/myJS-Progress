@@ -233,7 +233,12 @@ function printr11(){
    var star13= "";
    for(let i=1;i<=5;i++){
     for(let j=0; j<i;j++){
-       star13 +=  +"\u00A0";
+      if(j % 2 ==0){
+       star13 += 0;
+      }else{
+       star13 += 1;
+
+      }
     }
     star13 += "\n";
    }

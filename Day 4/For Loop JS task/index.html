@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sum of Array Elements</title>
+    <title>For LOOP JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -411,13 +411,27 @@ function printr10(){
             <div class="section">
                <h2>Exercise 13</h2>
                <p> 
-                soon..
+                   Zero One Triangle
                </p>
 <pre>
 <code>   
-
-soon.
-
+   function printr13(){
+      var star13= "";
+      for(let i=1;i<=5;i++){
+       for(let j=0; j< i;j++){
+         if(j % 2 ==0){
+          star13 += 0;
+         }else{
+          star13 += 1;
+   
+         }
+       }
+       star13 += "\n";
+      }
+      return star13;
+      }
+      document.getElementById("ex13").innerText = printr13();
+      
 </code></pre>
            <div id="ex13" class="output-box"></div>
            <!-- <button onclick="sumArr()">Check Sum In Console</button> -->

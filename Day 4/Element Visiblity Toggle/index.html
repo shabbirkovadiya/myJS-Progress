@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Visibility Toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bodyclass">
+    <div class="container">
+
+      <h1>Element Visibility Toggle</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a webpage with three buttons and two text boxes (initially hidden).
+          <br>
+          The first button should toggle the visibility of both text boxes (show/hide).
+          <br>
+          The second and third buttons should toggle the visibility of each text box individually.
+        </p>
+        <pre>
+<code>   
+  const box1=document.getElementById('box1')
+  const box2=document.getElementById('box2')
+  
+  
+  function showbox1(){
+    if  (box2.classList.contains("active")){
+        box2.classList.remove('active')
+  }
+  box1.classList.add('active');
+  }
+  function showbox2(){
+      if  (box1.classList.contains("active")){
+          box1.classList.remove('active')
+      }
+      box2.classList.add('active');
+  }
+  function showall() {
+      box1.classList.add("active");
+      box2.classList.add("active");
+    }
+    
+    
+</code></pre>
+       <button id="showall" onclick="showall()">Show ALL</button>
+       <button id="btn1" onclick="showbox1()">Show 1st BOX</button>
+       <button id="btn2" onclick="showbox2()">Show 2nd BOX</button>
+        <div id="box-wrapper">
+          <textarea name="text" id="box1" >BOX 1</textarea>
+          <textarea name="text" id="box2">BOX 2</textarea>
+        </div>
+      </div>
+  
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

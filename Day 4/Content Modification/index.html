@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Modification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bodyclass">
+    <div class="container">
+
+      <h1>Content Modification</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+        
+Create a webpage with a heading (e.g., "Welcome Visitor") and a button.
+ <br>
+Clicking the button should change the heading text to something personalized (e.g., "Welcome [Your Name]!").
+
+        </p>
+        <pre>
+<code>   
+  function printname(){
+
+    const message = document.getElementById('message');
+    const name = document.getElementById('inputbox').value;
+    message.innerText ="Welcome "+name; 
+}
+    
+    
+</code></pre>
+<h2 id="message">Welcome Visitor</h2>
+
+<input type="text" placeholder="Enter Name" id="inputbox">
+<button type="button" value="submit" onclick="printname()">Submit</button>
+      </div>
+  
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
