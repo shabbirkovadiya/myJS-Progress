@@ -411,3 +411,79 @@ const uiData = {
 ```
 Using this object show dynamic data using javascript in HTML views
 
+# Learning JS Day-5
+
+Day 5 Contain 8 Files and That FIles Container Diffrent Problems And There Solution.
+
+## Simple Substring Search: 
+
+Write a function that takes a string and a substring as parameter.
+It should print true if the substring is found anywhere in the string, false otherwise.
+
+
+## Removing a Character or Substring:
+
+Create a function that takes a string and a character as a parameter (Two Parameters).
+print a new string with the first occurrence of the character removed.
+
+
+## Case-Insensitive Search:
+
+Create a function that takes two parameter
+first param is string with all lowercase
+second param is search string with all uppercase 
+Using this two parameters found second param string from first string using case sensitive
+
+
+## Remove All Occurrences of a Substring:
+
+Write a function that takes a string and a substring as parameters
+If the substring parameter value is found on the main string parameter then remove the substring value on main string and print new string in console.
+
+
+for example. 
+
+const testString = "This is a test string"; 
+const subStr = "is";
+
+removeSubstring(testString, subStr) 
+
+subStr  value is remove on testString and print new value like "Th  a test string" 
+
+remove all is  from testString.
+
+## Check for All Elements in Another Array
+
+Create two arrays like that 
+const colors1 = ["red", "green", "blue"]; 
+const colors2 = ["blue", "red", "purple"];  
+After that write a function allElementsExist(colors1, colors2) using these two parameters.
+This function takes two arrays as input and prints true if all elements of the first array exist in the second array (regardless of order), otherwise false. Utilize a loop and the includes() method.
+
+## Remove Duplicates (Using includes())
+
+Create an array like this const numbers = [1, 2, 2, 3, 4, 1]; 
+Write a function that takes an array as parameter and print a new array containing only unique elements (removing duplicates). Implement a loop and includes() to check for existing elements before adding.
+Final result will be console.log(uniqueNumbers); // Output: [1, 2, 3, 4]
+
+
+## Replace All Occurrences
+
+Create a variable like that const numbers = [1, 2, 3, 2, 4]; 
+Write a function that takes an numbers, a value to replace, and a new value as a parameter. 
+Like replac1zeAll(numbers, 2, 5); a
+It should modify the original array, replacing all occurrences of the old value with the new value.
+For example we have array like numbers  variable 
+and function second parameter is old value like 2 number 
+and function 3rd parameter is new number
+so function can do this is in number  on every places found 2 number then this 2 number should be replaced to with new number 5
+Final result will be console.log(numbers); // Output: [1, 5, 3, 5, 4] 
+ 
+ ## Create to do list
+
+ Create a Input for typing a value
+Create a button so if user type any value and then click on button then this value show below of the button
+Show alert if click on button without typing any value
+Show all value below of the button
+
+https://www.figma.com/design/qwcEoyUQaCLp6slY3IQRlx/To-Do-List?node-id=0-1&t=JLFUBRFx3YRwc32z-0

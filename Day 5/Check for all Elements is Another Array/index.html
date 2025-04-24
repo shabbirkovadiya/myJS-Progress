@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check for all Elements is Another Array</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check for all Elements is Another Array</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create two arrays like that  <br>
+          const colors1 = ["red", "green", "blue"]; <br>
+          const colors2 = ["blue", "red", "purple"];  <br>
+          After that write a function allElementsExist(colors1, colors2) using these two parameters. <br>
+          This function takes two arrays as input and prints true if all elements of the first array exist in the second array (regardless of order), otherwise false. Utilize a loop and the includes() method.
+          
+        </p>
+        <pre>
+<code>   
+  const colors1 = ["red", "green", "blue"]; 
+  const colors2 = ["blue", "red", "purple"];
+  function allElementsExist(colors1, colors2) {
+      for (let i = 0; i < colors1.length; i++) {
+          if (!colors2.includes(colors1[i])) {
+              console.log(false) ;
+              // Found one that doesn't exist
+          }
+      }
+      console.log(true) ; // All elements found
+  }
+  
+  result= allElementsExist(colors1, colors2);
+  console.log(result)
+  
+</code></pre>
+       <div class="section">
+       Check Console
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

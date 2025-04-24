@@ -1,0 +1,81 @@
+//<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To - Do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Substring Search</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+        
+ Create a Input for typing a value  <br>
+ Create a button so if user type any value and then click on button then this value show below of the button <br>
+ Show alert if click on button without typing any value <br>
+ Show all value below of the button.
+
+        </p>
+        <pre>
+<code>   
+  const addtask = document.getElementById('addtask');
+  const taskDiv = document.getElementById('task-div');
+  taskDiv.innerText = "No Data Found !";
+  
+  
+  
+  function addData(){
+      if(addtask.value.length == 0){
+          alert("Enter Value");
+          return;
+      }
+      if (taskDiv.innerText === "No Data Found !") {
+                  taskDiv.innerText = "";
+              }
+      var id = Math.random().toString(16).slice(2)
+      const taskValue= addtask.value;
+      addtask.value ="";
+      const task=document.createElement('div');
+      const taskName=document.createElement('p');
+      const deleteIcon =document.createElement('i');
+      deleteIcon.setAttribute("class","fa-solid fa-trash");
+      deleteIcon.setAttribute("onclick",`removeData("${id}")`);
+      task.setAttribute("id",id);
+      task.setAttribute("class","task");
+      taskName.innerHTML=taskValue;
+      task.append(deleteIcon,taskName);
+      taskDiv.appendChild(task);
+      
+  }
+  
+  function removeData(id){
+      const taskid=document.getElementById(id)
+      if(taskid){
+          taskid.remove();
+      }
+  }
+  
+</code></pre>
+       <div class="section">
+        <h2>TO DO APP</h2>
+        <input type="text" placeholder="Add Task" id="addtask">
+      <button onclick="addData()" id="taskBtn">+</button>
+
+      <hr>
+      <div id="task-div"></div>
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  </body>
+</html>

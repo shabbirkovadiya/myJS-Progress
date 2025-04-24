@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple SubString Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Substring Search</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Write a function that takes a string and a substring as parameter.
+          It should print true if the substring is found anywhere in the string, false otherwise.
+        </p>
+        <pre>
+<code>   
+  function checkString(str, subStr) {
+      if (str.includes(subStr)) {
+          console.log(true);
+      } else {
+          console.log(false);
+      }
+  }
+  
+
+  checkString("hello world", "world"); // Output: true
+  checkString("hello world", "planet"); // Output: false
+</code></pre>
+       <div class="section">
+       Check Console
+       checkString("hello world", "world"); <br>
+checkString("hello world", "planet"); <br>
+
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

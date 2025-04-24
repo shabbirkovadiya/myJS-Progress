@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove All Occurrence of a substring</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Remove All Occurrence of a substring</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+         
+Write a function that takes a string and a substring as parameters <br>
+If the substring parameter value is found on the main string parameter then remove the substring value on main string and print new string in console.
+        </p>
+        <pre>
+<code>   
+function removeSubstring(mainString, subString) {
+  const result = mainString.split(subString).join('');
+  console.log(result);
+}
+
+removeSubstring("This is a test string", "is") ;
+
+</code></pre>
+       <div class="section">
+       Check Console
+  
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing a Character or Substring</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Removing a Character or Substring</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a function that takes a string and a character as a parameter (Two Parameters).
+          print a new string with the first occurrence of the character removed.
+        </p>
+        <pre>
+<code>   
+
+  function removeLetter(str, char) {
+        if (str.includes(char)){
+          str = str.replace(char, " ");
+          console.log(str)
+          
+        }
+        else{
+          console.log(char+" in "+ str + " Is Not Found")
+        }
+  }
+  
+  removeLetter("hello world","o")
+  
+</code></pre>
+       <div class="section">
+       Check Console <br>
+      
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

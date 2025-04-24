@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case-Insensitive Search:</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Case-Insensitive Search:</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a function that takes two parameter
+          first param is string with all lowercase
+          second param is search string with all uppercase 
+          Using this two parameters found second param string from first string using case sensitive
+          
+        </p>
+        <pre>
+<code>   
+  const str ="hello world";
+  const searchStr ="HELLO WORLD";
+  function casesensi(str, searchStr) {
+      console.log(str.includes(searchStr.toLowerCase())); //true
+      console.log(str.includes(searchStr)); //false
+  }
+  casesensi(str, searchStr);
+</code></pre>
+       <div class="section">
+       Check Console
+  
+
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
