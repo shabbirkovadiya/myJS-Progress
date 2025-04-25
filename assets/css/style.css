@@ -105,7 +105,7 @@ background-color: rgba(128, 128, 128, 0.212);
 .beginner-sec .task a:hover {
   color: #a89fff;
 }
-.intermediate-sec
+
 .day-1,.day-2, .day-3, .day-4, .day-5 , .day-6 {
   padding: 1px 10px;
   margin: 0px 10px;
@@ -129,4 +129,6 @@ background-color: rgba(128, 128, 128, 0.212);
 .day-5{
   background-color: var(--day5-badge-color);
 }
-
+.day-6{
+  background-color: var(--day6-badge-color);
+}

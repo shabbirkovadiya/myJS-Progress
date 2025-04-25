@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Match Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Match Validation</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a form with a password and confirm password field. When the form is submitted, write <br>JavaScript code to check if both passwords match. If not, display an error message next to the confirm password field.
+          
+        </p>
+        <pre>
+<code>   
+  const pass = document.getElementById('password');
+  const confirmpass = document.getElementById('confirmpassword');
+  const passWarning = document.getElementById('passWarning')
+  
+  
+  function check() {
+  if(!pass.value || !confirmpass.value){
+      passWarning.style.display = "block";
+      passWarning.innerText = "Enter Passwords First !"
+  }
+  else if(pass.value !== confirmpass.value){
+      passWarning.innerText = "Both Passwords Are Diffrent !"
+      passWarning.style.display = "block";
+  }
+  else{
+      passWarning.style.display = "none";
+  }
+  
+  
+  }  
+</code></pre>
+       <div class="section">
+      <form action="">
+        <div><label for="Password">Enter Password</label>
+        <input type="password" id="password" name="Password">
+      </div>
+        <div>  <label for="ConfirmPassword">Confirm Password</label>
+        <input type="password" id="confirmpassword" name="ConfirmPassword">
+      </div>
+      <span id="passWarning"></span>
+  
+        <button type="reset" onclick="check()">
+Submit
+        </button>
+      </form>
+
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

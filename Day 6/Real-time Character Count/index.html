@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Character Count</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Real-time Character Count</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a form with a text area for entering a message. Use JavaScript to display a character <br>
+          count next to the text area that updates dynamically as the user types.
+          
+        </p>
+        <pre>
+<code>   
+  const textArea = document.createElement('textarea');
+
+
+  const liveCount = document.getElementById('livecount');
+  const Tarea = document.getElementById('Tarea');
+  
+  
+  function count(){
+      liveCount.innerText = Tarea.value.length;
+  }
+  
+</code></pre>
+       <div class="section">
+      <form action="">
+      <textarea name="address" id="Tarea" cols="40" rows="10" oninput="count()"></textarea>
+      <p class="countP">Character Count : <span id="livecount">0</span></p>
+      </form>
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

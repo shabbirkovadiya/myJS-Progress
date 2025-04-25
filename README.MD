@@ -1,7 +1,7 @@
 ## 👉 [Click Here For Live Preview](https://my-js-tasks.netlify.app/)
 
 # Learning JS Day-1
-Day 1 Contain 6 Files and That FIles Container Diffrent Problems And There Solution
+Day 1 Contain 6 Files and That FIles Contain Diffrent Problems And There Solution
 
 ## Basic Exercise
 
@@ -84,7 +84,7 @@ console.log("The drive will take approximately:", time, "hours");
 
 
 # Learning JS Day-2
-Day 2 Contain 9 Files and That FIles Container Diffrent Problems And There Solution
+Day 2 Contain 9 Files and That FIles Contain Diffrent Problems And There Solution
 
 ## Greet by Name
 
@@ -178,7 +178,7 @@ if not eligible for discount then show Raju, sorry, no discount available.
 Click button should create function.
 
 # Learning JS Day-3
-Day 1 Contain 9 Files and That FIles Container Diffrent Problems And There Solution
+Day 1 Contain 9 Files and That FIles Contain Diffrent Problems And There Solution
 
 ## Admission Check
 
@@ -271,7 +271,7 @@ Test your function with various values (numbers, strings, Booleans, null, undefi
 # Learning JS Day-4
 
 
-Day 4Contain 10 Files and That FIles Container Diffrent Problems And There Solution
+Day 4Contain 10 Files and That FIles Contain Diffrent Problems And There Solution
 
 ## Sum of Array Elements
 
@@ -413,7 +413,7 @@ Using this object show dynamic data using javascript in HTML views
 
 # Learning JS Day-5
 
-Day 5 Contain 8 Files and That FIles Container Diffrent Problems And There Solution.
+Day 5 Contain 8 Files and That FIles Contain Diffrent Problems And There Solution.
 
 ## Simple Substring Search: 
 
@@ -487,3 +487,32 @@ Show alert if click on button without typing any value
 Show all value below of the button
 
 https://www.figma.com/design/qwcEoyUQaCLp6slY3IQRlx/To-Do-List?node-id=0-1&t=JLFUBRFx3YRwc32z-0
+
+# Learning JS Day-6
+Day 6 Contain 4 Files and That FIles Contain Diffrent Problems And There Solution.
+
+## Simple From Validation
+
+Create a form with a name and email field. When the form is submitted, write JavaScript code to check if both fields are filled in. If not, display an error message below to the empty field(s) in red colors.
+
+## Password Match Validation
+
+Create a form with a password and confirm password field. When the form is submitted, write JavaScript code to check if both passwords match. If not, display an error message next to the confirm password field.
+
+
+## Real-time Character Count
+
+Create a form with a text area for entering a message. Use JavaScript to display a character count next to the text area that updates dynamically as the user types.
+ 
+## Mega form value handle
+
+Figma ➝ https://www.figma.com/design/8hM5SgDhF8S4NbGmHG3cNE/Form?node-id=0-1&t=kWGnFWfoda1aQU5v-0
+
+Create a form with name, email, password,  address, sports, gender, country.
+All filed are required
+if not filled any once then show an error message below of input in red colour 
+If form is valid and then show all submitted value below of the form in table mode
+if click on edit icon then this table value fill in the all form control and if change anything then update the specific  selected  row on table.
+if click on delete icon then remove this row from table  
+If click on reset button then blank all form.
+reset button will be disabled on edit mode
