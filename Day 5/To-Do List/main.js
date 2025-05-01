@@ -12,7 +12,7 @@ function addData(){
     if (taskDiv.innerText === "No Data Found !") {
                 taskDiv.innerText = "";
             }
-    var id = Math.random().toString(16).slice(2)
+    var id = Math.random().toString(16).slice(2);
     const taskValue= addtask.value;
     addtask.value ="";
     const task=document.createElement('div');
