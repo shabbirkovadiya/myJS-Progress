@@ -7,7 +7,8 @@ const passInput = document.getElementById("passInput");
 const addressInput = document.getElementById("addressInput");
 const countryInput = document.getElementById("countryInput");
 const saveBtn = document.getElementById("saveBtn");
-const dataTable = document.getElementById("dataTable");
+const tbody= document.getElementById("tbody");
+
 
 function checkpass() {
   if (passInput.value.length >= 4 && passInput.value.length <= 12) {
@@ -52,7 +53,7 @@ function saveData() {
     isValid = false;
   }
 
-  // Radio input (e.g., gender)
+  // Radio input
   const radioInput = document.querySelector('input[type="radio"]:checked');
   if (!radioInput) {
     alert("Please select a gender.");
@@ -72,13 +73,12 @@ function saveData() {
     isValid = false;
   }
 
-  if (!isValid) return; // Stop if anything invalid
+  if (!isValid) return;
 
-  // Insert into table
-  const id = Math.random().toString(16).slice(2);
+  const sk = Math.random().toString(16).slice(2);
 
   const formData = `
-    <tr id="${id}">
+    <tr id="${sk}">
       <td>${nameInput.value}</td>
       <td>${emailInput.value}</td>
       <td>${passInput.value}</td>
@@ -87,15 +87,34 @@ function saveData() {
       <td>${radioInput.value}</td>
       <td>${countryInput.value}</td>
       <td class="action-icons"><i class="fas fa-edit"></i></td>
-      <td class="action-icons"><i class="fas fa-trash" onclick="removeData('${id}')"></i></td>
+      <td class="action-icons"><i class="fas fa-trash" onclick="removeData('${sk}')"></i></td>
     </tr>
   `;
-  dataTable.insertAdjacentHTML("beforeend", formData);
+  tbody.insertAdjacentHTML("beforeend", formData);
+  
+  nameInput.value = "";
+  emailInput.value = "";
+  passInput.value = "";
+  addressInput.value = "";
+  countryInput.selectedIndex = 0;
+  
+  document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+  document.querySelectorAll('input[name="sports"]').forEach(cb => cb.checked = false);
+  document.getElementById("no-data").style.display = "none";
+  
+  
+      
 }
 
-function removeData(id) {
-  const row = document.getElementById(id);
-  if (row) {
+
+function removeData(sk) {
+  const row = document.getElementById(sk);
     row.remove();
+
+     const dataRows = tbody.querySelectorAll("tr:not(#no-data)");
+  if (dataRows.length === 0) {
+    document.getElementById("no-data").style.display = "table-row";
   }
-}
+ 
+  }
+

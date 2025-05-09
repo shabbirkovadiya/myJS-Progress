@@ -66,13 +66,14 @@ soon.
             <div class="radio-group">
               <label><input type="radio" name="gender" value="male"> Male</label>
               <label><input type="radio" name="gender" value="Female"> Female</label>
-              <label><input type="radio" name="gender" checked value="not specified"> Prefer not to say</label>
+              <label><input type="radio" name="gender"  value="not specified"> Prefer not to say</label>
             </div>
           </div>
         
           <div class="form-group">
             <label for="country">Select your country</label>
             <select id="countryInput">
+              <option disabled selected>Select Country</option>
               <option>India</option>
               <option>Pakistan</option>
               <option>UAE</option>
@@ -90,7 +91,7 @@ soon.
        <!-- form section end  -->
         <!-- table data section  -->
          <table id="dataTable">
-          <tr>
+          <thead> <tr>
             <th>Name</th>
             <th>Email</th>
             <th>Password</th>
@@ -100,11 +101,17 @@ soon.
             <th>Country</th>
             <th>Edit</th>
             <th>Delete</th>
-          </tr>
-          <!-- <tr id="no-data">
-            <td colspan="9" style="text-align:center; color: gray;">NO DATA FOUND</td>
-          </tr> -->
-  
+          </tr></thead>
+      <tbody id="tbody">
+  <tr id="no-data">
+    <td colspan="9" style="text-align:center; color: gray;">NO DATA FOUND</td>
+  </tr>
+</tbody>
+
+
+         
+         
+          
       </table>
 
 
