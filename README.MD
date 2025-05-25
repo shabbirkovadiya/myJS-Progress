@@ -516,3 +516,101 @@ if click on edit icon then this table value fill in the all form control and if 
 if click on delete icon then remove this row from table  
 If click on reset button then blank all form.
 reset button will be disabled on edit mode
+
+# Learning JS Day-7
+Day 7 Contain 9 Files and That FIles Contain Diffrent Problems And There Solution.
+
+# JavaScript Date Exercise: Age Calculator
+
+Create a JavaScript function that calculates a person's age in years based on their 
+birthdate.
+
+function calculateAge(birthdate) {   // ...} 
+
+
+# JavaScript setInterval Exercise: Blinking Text
+
+Create a simple HTML element and make its text blink continuously using setInterval.
+
+Create div with some text 
+and make it so every second they should be visible or hide 
+so like blinking
+
+# JavaScript setInterval Exercise: Slide  (pendinggg)
+
+Create a simple image slideshow that automatically cycles through a set of images using setInterval.
+
+On html create a div and inside div put 3 images
+
+so at the time show only on image after 3 second show 2nd image and after 3 second show third image so keep rotation each 3 seconds. 
+
+
+# JavaScript: Counter
+
+Need to make a counter using setInterval 
+
+so fist create a p tag inside P tag put 0 value
+after that create three buttons
+Start
+If I click start then every second p tag value should be increase.
+Stop
+If I click stop then counter will stop on current value
+Reset
+If I reset then counter value should be 0 and counter is stop 
+
+# Finding the index
+
+Basic Exercises:
+Finding the index of the first even number:
+Create an array of numbers.
+Use findIndex() to find the index of the first even number.
+Finding the index of the first string starting with 'a':
+Create an array of strings.
+Use findIndex() to find the index of the first string that starts with 'a'.
+Finding the index of the first object with a specific property value:
+Create an array of objects with properties like name and age.
+Use findIndex() to find the index of the first object where age is greater than 30.
+
+
+# Filtering Numbers:
+
+Filtering Numbers:
+Create an array of numbers.
+Filter out even numbers.
+Filter out numbers greater than 5.
+Filter out numbers divisible by 3.
+Filtering Strings:
+Create an array of strings.
+Filter out strings longer than 5 characters.
+Filter out strings that start with a specific letter.
+Filter out strings that contain a specific word.
+Filtering Objects:
+Create an array of objects with properties like name and age.
+Filter out objects where age is greater than 40.
+Filter out objects whose name starts with 'A'.
+
+
+
+# Image Picker File
+
+https://www.figma.com/design/Dsp4Nr5YArMH8ess4Xj6UC/Simple-Image-Uploader---UI-Component-(Community)-(Copy)?node-id=7-3&t=5AgWnY8df5SNWv3n-0
+
+# form with local storage
+
+create a form with name and email filed and add a button
+
+check proper validation for name and email
+
+if I press add button then save data in local storage in array
+
+
+# JavaScript Date Exercise: Date Formatting
+
+Create a JavaScript function that formats a date according to a specified format string.
+
+date: A Date object representing the date to be formatted.
+formatString: A string specifying the desired format (e.g., 'YYYY-MM-DD', 'DD/MM/YYYY', 'MM DD, YYYY').
+
+
+function formatDate(date, formatString) {   // ... }
+

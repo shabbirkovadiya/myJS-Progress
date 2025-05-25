@@ -17,6 +17,7 @@
     --day4-badge-color :#42508f;
     --day5-badge-color :#3f725f;
     --day6-badge-color :#8b6d27;
+    --day7-badge-color :#3f1618;
     
 }
 body {
@@ -77,6 +78,16 @@ body {
   justify-content: center;
   margin-right: 10px;
 }
+.advance {
+    background-color: var(--advancecolor);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
 
 .circle {
     height: 15px;
@@ -106,7 +117,7 @@ background-color: rgba(128, 128, 128, 0.212);
   color: #a89fff;
 }
 
-.day-1,.day-2, .day-3, .day-4, .day-5 , .day-6 {
+.day-1,.day-2, .day-3, .day-4, .day-5 , .day-6,.day-7 {
   padding: 1px 10px;
   margin: 0px 10px;
   color: white;
@@ -131,4 +142,7 @@ background-color: rgba(128, 128, 128, 0.212);
 }
 .day-6{
   background-color: var(--day6-badge-color);
+}
+.day-7{
+  background-color: var(--day7-badge-color);
 }
