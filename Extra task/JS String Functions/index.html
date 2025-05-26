@@ -172,11 +172,9 @@ let getSum("15", "15") //Output : 30
 <code>   
 
 function myFunc8(a,b) {
-a=String(a);
-b=String(b);
-return a+b;
+return +a  +  +b;
 }
-document.getElementById("ex8").innerText = myFunc8(3,4);
+document.getElementById("ex8").innerText = myFunc8(30,40);
 
 
 </code></pre>
@@ -193,11 +191,11 @@ let checkChar("dcoders", "p") //Output : false
 </p>
 <pre>
 <code>   
+
 function myFunc9(str,a) {
- return str.startsWith(a.toUpperCase() || a.toLowerCase())
+ return str.startsWith(a)
 }
 document.getElementById("ex9").innerText = myFunc9("JAVA","j");
-
 </code></pre>
 <div id="ex9" class="output-box"></div>
 </div>

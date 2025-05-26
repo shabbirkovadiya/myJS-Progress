@@ -58,17 +58,15 @@ document.getElementById("ex7").innerText = myFunc7("javascript");
 //exercise 8
 
 function myFunc8(a,b) {
-a=String(a);
-b=String(b);
-return a+b;
+return +a  +  +b;
 }
-document.getElementById("ex8").innerText = myFunc8(3,4);
+document.getElementById("ex8").innerText = myFunc8("30","40");
 
 
 //exercise 9
 
 function myFunc9(str,a) {
- return str.startsWith(a.toUpperCase() || a.toLowerCase())
+ return str.startsWith(a)
 }
 document.getElementById("ex9").innerText = myFunc9("JAVA","j");
 
