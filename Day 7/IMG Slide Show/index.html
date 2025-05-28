@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMG SLide SHow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>IMG SlideShow</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+          Create a simple image slideshow that automatically cycles through a
+          set of images using setInterval. <br />
+
+          On html create a div and inside div put 3 images <br />
+
+          so at the time show only on image after 3 second show 2nd image and
+          after 3 second show third image so keep rotation each 3 seconds.
+        </p>
+        <pre>
+<code>   
+  const slides = document.querySelectorAll('.img');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+</code></pre>
+        <div
+          class="section"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <img src="img1.jpg" alt="" class="img active" />
+          <img src="img2.jpg" alt="" class="img " />
+          <img src="img3.jpg" alt="" class="img " />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

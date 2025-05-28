@@ -14,11 +14,23 @@
       <div class="section">
         <h2>Exercise 1</h2>
         <p>
-        soon..
+       Create a simple HTML element and make its text blink continuously using setInterval.
+
+Create div with some text 
+and make it so every second they should be visible or hide 
+so like blinking
         </p>
         <pre>
 <code>   
-  soon
+const text=document.getElementById('text');
+
+let visible = false;
+
+setInterval(() => {
+  visible = !visible;
+  text.style.display = visible ? "block" : "none";
+}, 500);
+
 </code></pre>
        <div class="section" style="display: flex; justify-content:center;align-items:center;">
     

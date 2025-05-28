@@ -14,14 +14,31 @@
       <div class="section">
         <h2>Exercise 1</h2>
         <p>
-        soon..
+        
+Create a JavaScript function that calculates a person's age in years based on their 
+birthdate.
+
+function calculateAge(birthdate) {   // ...} 
         </p>
         <pre>
 <code>   
-  soon
+  const birthdate = new Date(2005,8,16);
+const currentDate = new Date()
+
+
+function calcAge(){
+    var age = birthdate.getFullYear() - currentDate.getFullYear();
+
+    console.log("age is " +
+        Math.abs(age))
+}
+
+calcAge();
+
+
 </code></pre>
        <div class="section">
-    
+    <div id="output"></div>
 
 
        </div>

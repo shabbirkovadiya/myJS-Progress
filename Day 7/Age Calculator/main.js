@@ -5,9 +5,9 @@ const currentDate = new Date()
 function calcAge(){
     var age = birthdate.getFullYear() - currentDate.getFullYear();
 
-    console.log("age is " +
+    return ("age is " +
         Math.abs(age))
 }
+document.getElementById('output').innerText = calcAge();;
 
-calcAge();
 

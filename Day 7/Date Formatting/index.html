@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Formatting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Date  Formatting</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+        
+Create a JavaScript function that formats a date according to a specified format string. <br>
+
+date: A Date object representing the date to be formatted. <br>
+formatString: A string specifying the desired format (e.g., 'YYYY-MM-DD', 'DD/MM/YYYY', 'MM DD, YYYY'). <br>
+
+
+function formatDate(date, formatString) {   // ... }
+
+
+        </p>
+        <pre>
+<code>   
+       const currDate = new Date();
+          const formatString = "DD/MM/YYYY";
+
+          const output = document.getElementById("output");
+
+          function formatDate(date, formatString) {
+            const day = date.getDate();
+            const month = date.getMonth();
+            const year = date.getFullYear();
+
+            const arr = `${day}/${month + 1}/${year}`;
+
+            const data = formatString.replace("DD/MM/YYYY", arr);
+            console.log(data);
+            output.innerHTML = data;
+          }
+
+          formatDate(currDate, formatString)
+</code></pre>
+       <div class="section">
+    <div id="output"></div>
+
+
+       </div>
+      </div>
+     
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

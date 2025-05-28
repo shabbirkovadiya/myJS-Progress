@@ -536,7 +536,7 @@ Create div with some text
 and make it so every second they should be visible or hide 
 so like blinking
 
-# JavaScript setInterval Exercise: Slide  (pendinggg)
+# JavaScript setInterval Exercise: Slide
 
 Create a simple image slideshow that automatically cycles through a set of images using setInterval.
 

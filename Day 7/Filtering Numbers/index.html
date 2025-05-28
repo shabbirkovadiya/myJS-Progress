@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtering Numbers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Filtering Numbers</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Exercise 1</h2>
+        <p>
+        
+Filtering Numbers: <br>
+Create an array of numbers.<br>
+Filter out even numbers.<br>
+Filter out numbers greater than 5.<br>
+Filter out numbers divisible by 3.<br>
+<br>
+Filtering Strings:<br>
+Create an array of strings.<br>
+Filter out strings longer than 5 characters.<br>
+Filter out strings that start with a specific letter.<br>
+Filter out strings that contain a specific word.<br>
+<br>
+Filtering Objects:<br>
+Create an array of objects with properties like name and age.<br>
+Filter out objects where age is greater than 40.<br>
+Filter out objects whose name starts with 'A'.
+        </p>
+        <pre>
+<code>   
+// Ex:- 1
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const filterEvenNumber = myNumbers.filter((num) => num % 2 == 0);
+document.getElementById("output1").innerText = filterEvenNumber;
+
+const filterNum = myNumbers.filter((num) => num > 5);
+document.getElementById("output2").innerText = filterNum;
+
+const filterNumByThree = myNumbers.filter((num) => num % 3 == 0);
+document.getElementById('output3').innerText = filterNumByThree;
+
+
+// Ex:- 2
+const mystr = ["banana", "mango", "blueberry", "apple", "grapes"];
+
+const finalLenghtStr = mystr.filter((fruit) => fruit.length > 5);
+document.getElementById('output4').innerText = finalLenghtStr;
+
+
+const filterStr = mystr.filter((fruit) => fruit.startsWith("b"));
+document.getElementById('output5').innerText = filterStr;
+
+
+const filterWord = mystr.filter((fruit) => fruit.includes("grapes"));
+document.getElementById('output6').innerText = filterWord;
+
+
+// Ex:- 3
+const myObj = [
+  { name: "Abbasali", age: 35 },
+  { name: "Mohammadali", age: 50 },
+  { name: "Shabbirhasan", age: 45 },
+];
+
+const filterAge = myObj.filter((obj) => obj.age > 40);
+document.getElementById('output7').innerText = JSON.stringify(filterAge);
+
+const filterName = myObj.filter((obj) => obj.name.startsWith("A"));
+document.getElementById('output8').innerText = JSON.stringify(filterName);
+
+</code></pre>
+        <div
+          class="section"
+      >
+      <p id="output1"></p>
+      <p id="output2"></p>
+      <p id="output3"></p>
+      <br><br>
+      <p id="output4"></p>
+      <p id="output5"></p>
+      <p id="output6"></p>
+      <br><br>
+      <p id="output7"></p>
+      <p id="output8"></p>
+    </div>
+          
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

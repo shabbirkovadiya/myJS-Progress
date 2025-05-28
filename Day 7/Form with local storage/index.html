@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding The Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form with local storage</h1>
+      <hr />
+      <!-- Section 1  -->
+      <div class="section">
+        <h2>Form with local storage</h2>
+        <p>
+      
+        </p>
+        <pre>
+<code>   
+
+    const name = document.querySelector("#name");
+
+    const email = document.querySelector("#email");
+
+    const nameError = document.querySelector(".nameError");
+
+    const emailError = document.querySelector(".emailError");
+
+    const submitBtn = document.querySelector("#submitBtn");
+
+
+
+
+    function handleSubmitData(event) {
+      event.preventDefault();
+
+
+      let isValid = true;
+
+      if (!name.value.trim()) {
+        nameError.style.display = "block";
+        isValid = false;
+      } else {
+        nameError.style.display = "none";
+      }
+
+      if (!email.value.trim()) {
+        emailError.style.display = "block";
+        isValid = false;
+      } else {
+        emailError.style.display = "none";
+      }
+
+
+      if (isValid) {
+        var id = Math.random().toString(16).slice(2);
+
+        const users = JSON.parse(localStorage.getItem("Users")) || [];
+
+        const userData = {
+          id: id,
+          name: name.value,
+          email: email.value
+        };
+
+        users.push(userData);
+
+        localStorage.setItem("Users", JSON.stringify(users));
+
+        resetAllField();
+      }
+    }
+
+
+
+
+    function resetAllField() {
+      name.value = "";
+      email.value = "";
+    }
+</code></pre>
+        <div
+          class="section"
+      >
+        <form onsubmit="handleSubmitData(event)">
+          <div class="name">
+            <label for="name">Name</label> <br>
+            <input type="text" class="output-box" id="name" placeholder="Enter Your Name"></input>
+            <br>
+            <span class="nameError">Please enter your name</span>
+          </div>
+
+          <div class="email">
+            <label for="email">Email</label> <br>
+            <input type="email" class="output-box" id="email" placeholder="Enter Your Email"></input> <br>
+            <span class="emailError">Please enter your email</span>
+          </div>
+
+          <button type="submit" id="submitBtn" class="output-box-btn">Save</button>
+        </form>
+  
+          
+      </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

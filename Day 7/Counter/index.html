@@ -14,11 +14,47 @@
       <div class="section">
         <h2>Exercise 1</h2>
         <p>
-        soon..
+       
+Need to make a counter using setInterval 
+
+so fist create a p tag inside P tag put 0 value
+after that create three buttons
+Start
+If I click start then every second p tag value should be increase.
+Stop
+If I click stop then counter will stop on current value
+Reset
+If I reset then counter value should be 0 and counter is stop 
+
         </p>
         <pre>
 <code>   
-  soon
+const current=document.getElementById('current');
+var currentCount = 1;
+let intervalId=null;
+
+ function timerStart(){
+  if (intervalId !== null) return;
+
+  intervalId = setInterval(() => {
+    current.innerText = currentCount ;
+    currentCount++;
+  }, 1000);
+};
+
+
+function timerReset() {
+  clearInterval(intervalId);       
+  intervalId = null;               
+  currentCount = 1;                
+  current.innerText = "0";         
+}
+
+function timerStop(){
+   clearInterval(intervalId);  
+   intervalId=null;                   
+}
+
 </code></pre>
        <div class="section" style="display: flex; justify-content:center;align-items:center; flex-direction:column; gap:20px;">
     
