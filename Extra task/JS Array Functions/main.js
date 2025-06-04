@@ -44,23 +44,14 @@ document.getElementById("ex4").innerText =
     myFunc4(["Apple", "Zebra", "Mango"]);
 
 // exercise 5
-let obj1 = { age:18, name: "Jhon" };
-let obj2 = { name: "Jhon" ,age : 18};
+let obj1 = { name: "Jhon", age: 18 };
+let obj2 = { name: "Jhon", age: 18 };
 let obj3 = { name: "Doe" };
 const myFunc5 = (obj1, obj2) => {
-    const keys1 = Object.keys(obj1);
-    const keys2 = Object.keys(obj2);
-
-    if (keys1.length !== keys2.length) return false;
-
-    for (let key of keys1) {
-        if (obj1[key] !== obj2[key]) return false;
-    }
-
-    return true;
+    if (Object.keys(obj1).length != Object.keys(obj2).length) return false;
+    return Object.keys(obj1).every(ele => ele in obj2 && obj1[ele] === obj2[ele]);
 }
-document.getElementById("ex5").innerText =myFunc5(obj1, obj2);
-
+document.getElementById("ex5").innerText = myFunc5(obj1, obj2);
 
 
 //exercise 6

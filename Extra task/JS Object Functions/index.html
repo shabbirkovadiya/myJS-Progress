@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Object Functions</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Write a JavaScript program to getthe length of a JavaScript object. <br>
+                  let student = {
+name : "John Doe",
+class : "JavaScript",
+rollno : 12 }
+
+                    </p>
+<pre>
+<code>   
+let student = {
+  name: "John Doe",
+  class: "JavaScript",
+  rollno: 12
+};
+const myFunc1 = obj => Object.keys(obj).length;
+document.getElementById("ex1").innerText = myFunc1(student);
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+              <!-- Section 2  -->
+              <div class="section">
+                <h2>Exercise 2</h2>
+                <p>Write a JavaScript function to get all the values of an object's values
+and return a single String of values as an example. <br>
+let bio = {name : "Dcoders", course: "JavaScript"} <br>
+//Output : "Dcoders JavaScript"
+
+                    </p>
+<pre>
+<code>   
+let bio = { name: "Dcoders", course: "JavaScript" };
+const myFunc2 = obj => Object.values(obj).join(" ");
+document.getElementById("ex2").innerText = myFunc2(bio);
+</code></pre>
+            <div id="ex2" class="output-box"></div>
+            </div>
+ <!-- Section 3  -->
+ <div class="section">
+    <h2>Exercise 3</h2>
+    <p>
+Create a function to where I can pass Object and Property. Return
+Boolean value if property exists in the given object. <br>
+let checkKey( {name:"abc"}, "name") // Output : true <br>
+let checkKey( {age:10, color:"red"}, "course"); // Output : false
+</p>
+<pre>
+<code>   
+const myFunc3 = (obj, prop) => prop in obj;
+document.getElementById("ex3").innerText = myFunc3({name:"abc"},"name");
+</code></pre>
+<div id="ex3" class="output-box"></div>
+</div>
+ <!-- Section 4  -->
+ <div class="section">
+    <h2>Exercise 4</h2>
+    <p>
+Change the value of given object.Concat "Yes" to the value and return new value of an object. <br>
+let changeVaIue = {name: "dcoders"} // Output : "yes dcoders"
+    </p>
+<pre>
+<code>   
+const myFunc4 = obj => "Yes " + Object.values(obj) ;
+document.getElementById("ex4").innerText = myFunc4({name:"dcoders"});
+</code></pre>
+<div id="ex4" class="output-box"></div>
+</div>
+ <!-- Section 5  -->
+ <div class="section">
+    <h2>Exercise 5</h2>
+    <p>
+      Using Destructuring method, return a value of name key from object. <br>
+      let getName = { age:20, course:"JavaScript", name:"John Doe"};
+Output : John Doe
+    </p>
+<pre>
+<code>   
+
+let getName = { age: 20, course: "JavaScript", name: "John Doe" };
+const myFunc5 = obj => {
+  const { name } = obj;
+  return name;
+}
+document.getElementById("ex5").innerText = myFunc5(getName);
+
+
+</code></pre>
+<div id="ex5" class="output-box"></div>
+</div>
+ <!-- Section 6  -->
+ <div class="section">
+    <h2>Exercise 6</h2>
+    <p>
+Remove the "color" property from an object and return a string with
+remaining key value pairs of an object. <br>
+let removeKey({name:"John Doe",age:20,color:"pink"}); <br>
+Output :- name John doe age 20
+    </p>
+<pre>
+<code>   
+let removeKey = { name: "John Doe", age: 20, color: "pink" };
+const myFunc6 = obj => {
+  delete obj.color;
+  return Object.entries(obj).flat(Infinity).join(" ")
+}
+document.getElementById("ex6").innerText = myFunc6(removeKey);
+
+</code></pre>
+<div id="ex6" class="output-box"></div>
+</div>
+ <!-- Section 7  -->
+ <div class="section">
+    <h2>Exercise 7</h2>
+    <p>
+  Create a functions which return value of city from nested object. <br>
+  let person = {
+name: "John Doe",
+address: {
+city: "Springfield",
+}
+  }
+</p>
+<pre>
+<code>   
+let person = {
+  name: "John Doe",
+  address: {
+    city: "Springfield"
+  }
+}
+const myFunc7 = obj => obj.address.city;
+document.getElementById("ex7").innerText = myFunc7(person);
+
+</code></pre>
+<div id="ex7" class="output-box"></div>
+</div>
+ <!-- Section 8  -->
+ <div class="section">
+    <h2>Exercise 8</h2>
+    <p>
+   Create a functions to return an Object from given nested
+Array. <br>
+let GetObj([['age',20],['color','red']]); <br>
+{age:20,color:"red"};
+</p>
+<pre>
+<code>   
+
+const myFunc8 = arr => Object.fromEntries(arr);
+document.getElementById("ex8").innerText = JSON.stringify(myFunc8([['age', 20], ['color', 'red']]));
+
+
+</code></pre>
+<div id="ex8" class="output-box"></div>
+</div>
+            
+ <!-- Section 9  -->
+ <div class="section">
+    <h2>Exercise 9</h2>
+    <p>
+Create a function to takes an Object and return true if value of any
+key is of Number Datatype. <br>
+let checkNumVaIue ({age: 20}); Output: true <br>
+let checkNumVaIue ({age: "20"}); Output: false 
+</p>
+<pre>
+<code>   
+const myFunc9 = obj => 
+Object.values(obj).some((ele => typeof ele == 'number'))
+document.getElementById('ex9').innerText = myFunc9({ age: "90", age2: 2 })
+</code></pre>
+<div id="ex9" class="output-box"></div>
+</div>
+         
+ <!-- Section 10  -->
+ <div class="section">
+    <h2>Exercise 10</h2>
+    <p>
+  Create a function which takes an Array of an Objects and return a
+String with all the properties of each object. <br>
+getStr({name:'John, age:20}, {type:'vehicle', model: 'car'}); <br>
+Output : "name age type model"
+</p>
+<pre>
+<code>   
+let tempVar = [{name:'John', age:20}, {type:'vehicle', model: 'car'},{type:'vehicle', model: 'car'}];
+const myFunc10 = arr => {
+let [obj,obj2] = arr;
+let obj3 = Object.assign(obj,obj2)
+return Object.keys(obj3).join(" ")
+}
+document.getElementById('ex10').innerText = myFunc10(tempVar);
+</code></pre>
+<div id="ex10" class="output-box"></div>
+</div>
+
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>
