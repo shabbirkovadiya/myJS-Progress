@@ -59,12 +59,13 @@ const myFunc9 = obj =>
 Object.values(obj).some((ele => typeof ele == 'number'))
 document.getElementById('ex9').innerText = myFunc9({ age: "90", age2: 2 })
 
+
 //exercise 10
-let tempVar = [{name:'John', age:20}, {type:'vehicle', model: 'car'},{type:'vehicle', model: 'car'}];
-const myFunc10 = arr => {
-let [obj,obj2] = arr;
-let obj3 = Object.assign(obj,obj2)
-return Object.keys(obj3).join(" ")
-}
+let tempVar = [{name:'John', age:20}, {type:'vehicle', model: 'car'},{year:2019,BuiltYear:1991}];
+let newStr =[];
+const myFunc10 = arr =>{
+arr.forEach(e =>newStr.push(Object.keys(e)));
+return newStr.flat(Infinity).join(" ");
+} 
 document.getElementById('ex10').innerText = myFunc10(tempVar);
 
