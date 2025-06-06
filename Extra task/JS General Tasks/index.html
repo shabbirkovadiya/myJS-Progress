@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>General Tasks</h1>
+            <hr>
+            <!-- Section 1  -->
+            <div class="section">
+                <h2>Exercise 1</h2>
+                <p>Write a JavaScript program which receives an array of object of
+students and retrun only name of students in an array who scored marks
+above 49. <br>
+let student = {name : "John", marks : 50}, {name : "Alice", marks :
+39},  <br>
+{name : "Harish", marks : 87}, {name : "Liza", marks : 49} ] <br>
+//Output : ["John", "Harish"];
+</p>
+<pre>
+<code>   
+let student = [
+{ name: "John", marks: 50 }, 
+{name: "Alice", marks:39},
+{ name: "Harish", marks: 87 },
+{ name: "Liza", marks: 49 }
+];
+
+const myFunc1 = arr =>  arr.filter(e => e.marks > 49).map(e => e.name);
+document.getElementById("ex1").innerText = myFunc1(student);
+</code></pre>
+            <div id="ex1" class="output-box"></div>
+            </div>
+
+              <!-- Section 2  -->
+              <div class="section">
+                <h2>Exercise 2</h2>
+                <p>Write a JavaScript function to which get random string, filter out
+duplicate characters/num and return unique characters/num in an array. <br>
+let filterStr("aabbccdef11255") //Output : ['a','b','c','d','e','f',1,2,5];
+                    </p>
+<pre>
+<code>   
+const myFunc2 = str => [...new Set(str)];
+document.getElementById("ex2").innerText = myFunc2("aabbccdef11255");
+</code></pre>
+            <div id="ex2" class="output-box"></div>
+            </div>
+
+                     <!-- Section 3  -->
+              <div class="section">
+                <h2>Exercise 3</h2>
+                <p>Write a JavaScript program which receives 2 arguments. An array of
+characters and array of numbers. Return an array of characters which
+matches the index in second array. <br>
+let newArr( ['a', 'b', 'c', 'd','e'],[1,3]) //Output : ["b","d"];
+                    </p>
+<pre>
+<code>   
+const myFunc3 = (arr1,arr2) => {
+let tempArr=[];
+for (let x of arr2){
+  tempArr.push(arr1[x])
+}
+return tempArr;
+}
+document.getElementById("ex3").innerText = myFunc3(['a', 'b', 'c', 'd','e'],[1,3]);
+</code></pre>
+            <div id="ex3" class="output-box"></div>
+            </div>
+
+                     <!-- Section 4  -->
+              <div class="section">
+                <h2>Exercise 4</h2>
+                <p>soon
+                    </p>
+<pre>
+<code>   
+soon
+</code></pre>
+            <div id="ex4" class="output-box"></div>
+            </div>
+ 
+
+        </div>
+<script src="main.js"></script>
+</body>
+</html>
