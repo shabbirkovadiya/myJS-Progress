@@ -84,7 +84,7 @@ let protectEmaiI("dcoders_Iab@exampIe.com") // dcod...@example.com
                     </p>
 <pre>
 <code>   
-const myFunc4 = str => str.replace(str.slice(4,-12),"...");
+const myFunc4 = str => str.replace(str.split("@")[0].slice(4),"...");
 document.getElementById("ex4").innerText = myFunc4("dcoders_Iab@exampIe.com");
 </code></pre>
             <div id="ex4" class="output-box"></div>
@@ -114,7 +114,8 @@ let integerRound5(137);
                     </p>
 <pre>
 <code>   
-soon...
+const myFunc6 = num => Math.ceil(num / 5) * 5;
+document.getElementById("ex6").innerText = myFunc6(32);
 </code></pre>
             <div id="ex6" class="output-box"></div>
             </div>
@@ -129,10 +130,7 @@ let newArr( [{a:10}, {b:20},{c:30}],5) //Output : [{a:10}, {b:20},{c:30}]
                     </p>
 <pre>
 <code>   
-const myFunc7 = (arr, i) => {
-  arr.splice(i, 1);
-  return arr;
-}
+const myFunc7 = (arr, i) => arr.toSpliced(i, 1);
 document.getElementById("ex7").innerText = JSON.stringify(myFunc7([{ x: 1 }, { y: 2 }, { z: 3 }], 1));
 </code></pre>
             <div id="ex7" class="output-box"></div>
